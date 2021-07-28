@@ -1,16 +1,12 @@
-const bases = document.querySelectorAll('.element');
-const boxs = document.querySelectorAll('.dropable');
-const leave = document.querySelector('.dropable_leave');
+var bases;
+var boxs = document.querySelectorAll('.dropable');
+var leave = document.querySelector('.dropable_leave');
 
 const search = document.querySelector('.search_planning');
 var choice;
+var choice_clone;
 
-bases.forEach((base) =>{
-    base.addEventListener('dragstart', () =>{
-        choice = base;
-    });
-    base.addEventListener('dragend', dragEnd);
-})
+maj_bases()
 
 boxs.forEach((box) =>{
     box.addEventListener('dragover', dragOver);
@@ -41,18 +37,20 @@ function dragLeave(){
 }
 
 function dragDrop(){
-    this.classList.remove('hovered');
-    choice.parentNode.remove();
-    this.appendChild(choice);
-    choice.className += ' droped';
+    if(choice.className.includes('droped')){
+        this.classList.remove('hovered');
+        this.appendChild(choice);
+    }else{
+        this.classList.remove('hovered');
+        this.appendChild(choice_clone);
+        choice_clone.className += ' droped';
+    }
+    maj_bases();
 }
 
 function dragDrop_leave(){
-    this.classList.remove('hovered');    
-    var li = document.createElement("li");
-    li.appendChild(choice);
-    this.appendChild(li);
-    choice.classList.remove('droped');
+    this.classList.remove('hovered');
+    choice.remove();
 }
 
 function function_search() {
@@ -69,3 +67,13 @@ function function_search() {
     }
   }
   
+  function maj_bases(){
+    bases = document.querySelectorAll('.element');
+    bases.forEach((base) =>{
+        base.addEventListener('dragstart', () =>{
+            choice = base;
+            choice_clone = choice.cloneNode(true);
+        });
+        base.addEventListener('dragend', dragEnd);
+    })
+  }

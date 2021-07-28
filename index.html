@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="tableau.css">
-    <link rel="stylesheet" href="drag.css">
-    <link rel="stylesheet" href="scroll.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tableau.css">
+    <link rel="stylesheet" href="css/drag.css">
+    <link rel="stylesheet" href="css/scroll.css">
+    <link rel="stylesheet" href="css/custom_click.css">
     
 	<link href="fontawesome/css/all.css" rel="stylesheet">
     <title>Planning</title>
 </head>
 <body>
     <div class="container">
+        <div class="menu-perso">
+            <button class="btn b1">
+                <i class="fas fa-plus-square"></i> <div class="btn_text">Ajouter</div>
+            </button>
+            <button class="btn b2">
+                <i class="fas fa-copy"></i> <div class="btn_text">Dupliquer</div>
+            </button>
+            <button class="btn b3">
+                <i class="fas fa-minus-square"></i> <div class="btn_text">Supprimer</div>
+            </button>
+        </div>
+
+
         <div class="menu">
             <button type="button" class="menu_back_btn">
                 <i class="fas fa-chevron-left"></i> Retour
@@ -26,30 +40,16 @@
                 <button type="button" class="menu_fitre">Filtre <i class="fas fa-chevron-right"></i></button>
             </div>
             <ul class="dropable_leave scroll">
-                <li><button class="element" draggable="true">Nom Prenom<div class="element_qualification"><i class="far fa-lightbulb"></i> Elec, <i class="fas fa-user-tie"></i> Gerant</div>
-                </button></li>
-                <li><button class="element" draggable="true">Test 1</button></li>
-                <li><button class="element" draggable="true">Test 1</button></li>
-                <li><button class="element" draggable="true">Test 1</button></li>
-                <li><button class="element" draggable="true">Test 1</button></li>
-                <li><button class="element" draggable="true">Test 1</button></li>
-                <li><button class="element" draggable="true">Test 1</button></li>
-                <li><button class="element" draggable="true">Test 1</button></li>
-                <li><button class="element" draggable="true">Test 1</button></li>
-                <li><button class="element" draggable="true">Test 1</button></li>
-                <li><button class="element" draggable="true">Test 1</button></li>
-                <li><button class="element" draggable="true">Test 1</button></li>
-                <li><button class="element" draggable="true">Test 1</button></li>
-                <li><button class="element" draggable="true">Test 1</button></li>
-                <li><button class="element" draggable="true">Test 1</button></li>
-                <li><button class="element" draggable="true">Test 1</button></li>
-                <li><button class="element" draggable="true">Test 1</button></li>
-                <li><button class="element" draggable="true">Test 1</button></li>
-                <li><button class="element" draggable="true">Test 1</button></li>
-                <li><button class="element" draggable="true">Test 1</button></li>
-                <li><button class="element" draggable="true">Test 1</button></li>
-                <li><button class="element" draggable="true">Test 1</button></li>
-                <li><button class="element" draggable="true">Test 1</button></li>
+                <li>
+                    <button class="element" draggable="true">
+                        BURLINCHON Matt<div class="element_qualification"><i class="far fa-lightbulb"></i> Elec, <i class="fas fa-file-code"></i> Dev</div>
+                    </button>
+                </li>
+                <li>
+                    <button class="element" draggable="true">
+                        BURLINCHON Eric<div class="element_qualification"><i class="fas fa-wrench"></i> CVC, <i class="fas fa-user-tie"></i> Gerant</div>
+                    </button>
+                </li>
             </ul>
         </div>
         <div class="planning">
@@ -121,6 +121,7 @@
             </table>
         </div>
     </div>
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/custom_click.js"></script>
 </body>
 </html>
