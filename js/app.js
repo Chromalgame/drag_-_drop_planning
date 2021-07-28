@@ -50,7 +50,9 @@ function dragDrop(){
 
 function dragDrop_leave(){
     this.classList.remove('hovered');
-    choice.remove();
+    if(!choice.parentNode.parentNode.className.includes('dropable_leave')){
+        choice.remove();
+    }
 }
 
 function function_search() {

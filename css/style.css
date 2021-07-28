@@ -15,7 +15,7 @@ body{
 }
 
 .menu{
-    background: lightblue;
+    background: rgb(159, 199, 211);
     width: 15%;
     height: 100%;
     display: flex;
@@ -24,7 +24,7 @@ body{
 }
 
 .planning{
-    background: lightgreen;
+    background: #f1f1f1;
     width: 85%;
     height: 100%;
 }
