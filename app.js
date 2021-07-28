@@ -42,13 +42,16 @@ function dragLeave(){
 
 function dragDrop(){
     this.classList.remove('hovered');
+    choice.parentNode.remove();
     this.appendChild(choice);
     choice.className += ' droped';
 }
 
 function dragDrop_leave(){
-    this.classList.remove('hovered');
-    this.appendChild(choice);
+    this.classList.remove('hovered');    
+    var li = document.createElement("li");
+    li.appendChild(choice);
+    this.appendChild(li);
     choice.classList.remove('droped');
 }
 
