@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tableau.css">
+    <link rel="stylesheet" href="drag.css">
+    <link rel="stylesheet" href="scroll.css">
+    
+	<link href="fontawesome/css/all.css" rel="stylesheet">
+    <title>Planning</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <button type="button" class="menu_back_btn">
+                <i class="fas fa-chevron-left"></i> Retour
+            </button>
+            <div class="search">
+                <input onkeyup="function_search()" class="search_planning" type="text" placeholder="Rechercher" />
+                <img class="search_search_img" src="search-solid.svg" alt="Rechercher" />
+            </div>
+            <div class="filtre">
+                <button type="button" class="menu_fitre">Filtre <i class="fas fa-chevron-right"></i></button>
+            </div>
+            <ul class="dropable_leave scroll">
+                <li><button class="element" draggable="true">Nom Prenom<div class="element_qualification"><i class="far fa-lightbulb"></i> Elec, <i class="fas fa-user-tie"></i> Gerant</div>
+                </button></li>
+                <li><button class="element" draggable="true">Test 1</button></li>
+                <li><button class="element" draggable="true">Test 1</button></li>
+                <li><button class="element" draggable="true">Test 1</button></li>
+                <li><button class="element" draggable="true">Test 1</button></li>
+                <li><button class="element" draggable="true">Test 1</button></li>
+                <li><button class="element" draggable="true">Test 1</button></li>
+                <li><button class="element" draggable="true">Test 1</button></li>
+                <li><button class="element" draggable="true">Test 1</button></li>
+                <li><button class="element" draggable="true">Test 1</button></li>
+                <li><button class="element" draggable="true">Test 1</button></li>
+                <li><button class="element" draggable="true">Test 1</button></li>
+                <li><button class="element" draggable="true">Test 1</button></li>
+                <li><button class="element" draggable="true">Test 1</button></li>
+                <li><button class="element" draggable="true">Test 1</button></li>
+                <li><button class="element" draggable="true">Test 1</button></li>
+                <li><button class="element" draggable="true">Test 1</button></li>
+                <li><button class="element" draggable="true">Test 1</button></li>
+                <li><button class="element" draggable="true">Test 1</button></li>
+                <li><button class="element" draggable="true">Test 1</button></li>
+                <li><button class="element" draggable="true">Test 1</button></li>
+                <li><button class="element" draggable="true">Test 1</button></li>
+                <li><button class="element" draggable="true">Test 1</button></li>
+            </ul>
+        </div>
+        <div class="planning">
+            <table class="tableau-style">
+                <thead>
+                    <tr>
+                        <th>Chantier</th>
+                        <th>Lundi 26/07</th>
+                        <th>Mardi 27/07</th>
+                        <th>Mercredi 28/07</th>
+                        <th>Jeudi 29/07</th>
+                        <th>Vendredi 30/07</th>
+                        <th>Samedi 31/07</th>
+                        <th>Dimanche 01/08</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Qualiverre</td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                    </tr>
+                    <tr>
+                        <td>LF AUTO</td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                    </tr>
+                    <tr>
+                        <td>IMMO DES CONTES</td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                    </tr>
+                    <tr>
+                        <td>IMPLID ACTIVAL</td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                    </tr>
+                    <tr>
+                        <td>PALLADIUM</td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                        <td class="dropable"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

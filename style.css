@@ -1,0 +1,140 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.menu{
+    background: lightblue;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 0px 0px 10px 0px rgb(51 51 51);
+}
+
+.planning{
+    background: lightgreen;
+    width: 85%;
+    height: 100%;
+}
+
+.menu_back_btn{
+    margin: 0 auto;
+    padding: 2%;
+    width: 100%;
+    font-size: 15px;
+    text-align: left;
+    border: none;
+    background: none;
+    border-bottom: rgba(51, 51, 51, 0.2) solid 1px;
+    cursor: pointer;
+}
+
+.menu_back_btn:hover{
+    background: rgba(114, 161, 190, 0.5);
+}
+
+.menu_back_btn i{
+    padding: 2% 3%;
+}
+
+.search{
+    position: relative;
+    display: flex;
+    width: 90%;
+    margin: 4% auto;
+}
+
+.search_search_img{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 15%;
+    padding: 3%;
+    background: rgb(255, 255, 255);
+    border-left: rgb(51, 51, 51, 0.3) solid 2px;
+}
+
+.search_planning{
+    width: 90%;
+    /* margin: 4%; */
+    border:none;
+    outline: none;
+    padding: 3%;
+    font-size: 15px;    
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.filtre{
+    width: 100%;
+    height: 3%;
+}
+
+.menu_fitre{
+    padding: 2%;
+    font-size: 15px;
+    text-align: right;
+    border: none;
+    background: none;
+    border-bottom: rgba(51, 51, 51, 0.2) solid 1px;
+    border-top: rgba(51, 51, 51, 0.2) solid 1px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.menu_fitre:hover{
+    background: rgba(114, 161, 190, 0.5);
+}
+
+.menu_fitre i{
+    padding: 0 3%;
+}
+
+ul{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+
+.element{
+    position: relative;
+    width: 90%;
+    padding: 6% 2%;
+    border: rgba(51, 51, 51, 0.5) solid 1px;
+    text-align: left;
+    cursor: pointer;
+    margin: 4% 5%;
+    border-radius: 3px;
+    background: #f1f1f1;
+    box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.5);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.element:hover{
+    background: rgba(114, 161, 190, 0.5);
+}
+
+.element_qualification{
+    position: absolute;
+    width: 90%;
+    top: 70%;
+    font-size: 10px;
+    color: grey;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

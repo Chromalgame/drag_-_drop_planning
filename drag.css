@@ -1,0 +1,14 @@
+.hovered {
+    background: #d1d1d1;
+}
+
+.droped{
+    padding: 10% 2%;
+    padding-top: 2%;
+
+    max-width:130px;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
