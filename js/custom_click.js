@@ -41,9 +41,11 @@ add_ligne_btns.forEach((add_ligne_btn) =>{
         <td class="dropable"></td>
         <td class="dropable"></td>
         <td class="dropable"></td>`;
+        add_ligne_btn.remove();
         add_ligne_planning.style.display = "none";
         table.appendChild(tr);
         refresh();
+        function_boxs();
     })
 })
 

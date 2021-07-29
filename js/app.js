@@ -6,7 +6,8 @@ const search = document.querySelector('#search_planning');
 var choice;
 var choice_clone;
 
-maj_bases()
+maj_bases();
+function_boxs();
 
 boxs.forEach((box) =>{
     box.addEventListener('dragover', dragOver);
@@ -80,3 +81,13 @@ function function_search() {
         base.addEventListener('dragend', dragEnd);
     })
   }
+
+  function function_boxs(){
+    boxs = document.querySelectorAll('.dropable');
+    boxs.forEach((box) =>{
+        box.addEventListener('dragover', dragOver);
+        box.addEventListener('dragenter', dragEnter);
+        box.addEventListener('dragleave', dragLeave);
+        box.addEventListener('drop', dragDrop);
+    });
+}
