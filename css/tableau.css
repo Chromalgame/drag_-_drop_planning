@@ -34,3 +34,18 @@ tbody tr:nth-child(even){
 tbody tr:last-of-type{
     border-bottom: 2px solid midnightblue;
 }
+
+.note{
+    font-size:13px;
+    color: #333;
+    background: #f3f3f3;
+    border-top: 1px solid midnightblue;
+}
+
+.note:last-of-type{
+    border-right: 1px solid midnightblue;
+}
+
+.note:first-of-type{
+    border-left: 1px solid midnightblue;
+}
