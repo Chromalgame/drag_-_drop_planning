@@ -6,6 +6,8 @@
     width: 180px;
     position: absolute;
     display: none;
+    
+    z-index: 999;
 }
 
 .btn{
@@ -63,6 +65,7 @@
     left: 50%;
     transform: translate(-50%, -60%);
     border-radius: 5px;
+    z-index: 999;
 }
 
 .croix{
