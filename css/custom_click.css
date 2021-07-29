@@ -57,6 +57,7 @@
     position: absolute;
     width: 40%;
     height: 40%;
+    min-width: 576px;
     background: #ddd;
     top: 50%;
     left: 50%;
