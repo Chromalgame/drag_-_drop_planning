@@ -44,6 +44,7 @@ function dragDrop(){
         this.classList.remove('hovered');
         this.appendChild(choice_clone);
         choice_clone.className += ' droped';
+        choice_clone.classList.remove('base');
     }
     maj_bases();
 }

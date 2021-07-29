@@ -27,6 +27,30 @@
             </button>
         </div>
 
+        <div class="add_ligne_planning">
+            <div class="croix"><button type="button" class="add_ligne_planning_fermer">X</button></div>
+            <!-- Faire par BDD -->
+            <div class="search custom_search">
+                <input onkeyup="function_search_add()" class="search_planning" type="text" placeholder="Rechercher" />
+                <img class="search_search_img custom_search_search_img" src="search-solid.svg" alt="Rechercher" />
+            </div>
+            <div class="add_ligne_box_btn scroll">
+                <button class="add_ligne_btn" type="button">FAUN GUILHERAND</button>
+                <button class="add_ligne_btn" type="button">ETUVAGE</button>
+                <button class="add_ligne_btn" type="button">CONGES</button>
+                <button class="add_ligne_btn" type="button">CONGES</button>
+                <button class="add_ligne_btn" type="button">CONGES</button>
+                <button class="add_ligne_btn" type="button">CONGES</button>
+                <button class="add_ligne_btn" type="button">CONGES</button>
+                <button class="add_ligne_btn" type="button">CONGES</button>
+                <button class="add_ligne_btn" type="button">CONGES</button>
+                <button class="add_ligne_btn" type="button">CONGES</button>
+                <button class="add_ligne_btn" type="button">CONGES</button>
+                <button class="add_ligne_btn" type="button">CONGES</button>
+                <button class="add_ligne_btn" type="button">CONGES</button>
+                <button class="add_ligne_btn" type="button">CONGES</button>
+            </div>
+        </div>
 
         <div class="menu">
             <button type="button" class="menu_back_btn">
@@ -40,22 +64,34 @@
                 <button type="button" class="menu_fitre">Filtre <i class="fas fa-chevron-right"></i></button>
             </div>
             <ul class="dropable_leave scroll">
+                <!-- Faire par BDD -->
                 <li>
-                    <button class="element" draggable="true">
+                    <button class="element base" draggable="true">
                         BURLINCHON Matt<div class="element_qualification"><i class="far fa-lightbulb"></i> Elec, <i class="fas fa-file-code"></i> Dev</div>
                     </button>
                 </li>
                 <li>
-                    <button class="element" draggable="true">
+                    <button class="element base" draggable="true">
                         BURLINCHON Eric<div class="element_qualification"><i class="fas fa-wrench"></i> CVC, <i class="fas fa-user-tie"></i> Gerant</div>
                     </button>
                 </li>
             </ul>
         </div>
         <div class="planning">
+            <div class="planning_top">
+                <input onClick="getColor(this)" type="radio" id="black" name="color" value="black" checked>
+                <label for="black">black</label>
+                <input onClick="getColor(this)" type="radio" id="green" name="color" value="green">
+                <label for="green">green</label>
+                <input onClick="getColor(this)" type="radio" id="orange" name="color" value="orange">
+                <label for="orange">orange</label>
+                <input onClick="getColor(this)" type="radio" id="red" name="color" value="red">
+                <label for="red">red</label>
+            </div>
             <table class="tableau-style">
                 <thead>
                     <tr>
+                        <!-- Faire par php -->
                         <th>Chantier</th>
                         <th>Lundi 26/07</th>
                         <th>Mardi 27/07</th>
@@ -123,5 +159,6 @@
     </div>
     <script src="js/app.js"></script>
     <script src="js/custom_click.js"></script>
+    <script src="js/color.js"></script>
 </body>
 </html>
