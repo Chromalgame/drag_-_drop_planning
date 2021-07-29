@@ -33,7 +33,7 @@
             <div class="croix"><button type="button" class="add_ligne_planning_fermer">X</button></div>
             <!-- Faire par BDD -->
             <div class="search custom_search">
-                <input onkeyup="function_search_add()" class="search_planning" type="text" placeholder="Rechercher" />
+                <input onkeyup="function_search_add()" id="search_add" class="search_planning" type="text" placeholder="Rechercher" />
                 <img class="search_search_img custom_search_search_img" src="search-solid.svg" alt="Rechercher" />
             </div>
             <div class="add_ligne_box_btn scroll">
@@ -59,11 +59,8 @@
                 <i class="fas fa-chevron-left"></i> Retour
             </button>
             <div class="search">
-                <input onkeyup="function_search()" class="search_planning" type="text" placeholder="Rechercher" />
+                <input onkeyup="function_search()" id="search_planning" class="search_planning" type="text" placeholder="Rechercher" />
                 <img class="search_search_img" src="search-solid.svg" alt="Rechercher" />
-            </div>
-            <div class="filtre">
-                <button type="button" class="menu_fitre">Filtre <i class="fas fa-chevron-right"></i></button>
             </div>
             <ul class="dropable_leave scroll">
                 <!-- Faire par BDD -->

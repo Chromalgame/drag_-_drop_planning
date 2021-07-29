@@ -2,7 +2,7 @@ var bases;
 var boxs = document.querySelectorAll('.dropable');
 var leave = document.querySelector('.dropable_leave');
 
-const search = document.querySelector('.search_planning');
+const search = document.querySelector('#search_planning');
 var choice;
 var choice_clone;
 
@@ -68,7 +68,7 @@ function function_search() {
         label[i].style.display = "none";
       }
     }
-  }
+  } 
   
   function maj_bases(){
     bases = document.querySelectorAll('.element');

@@ -48,7 +48,7 @@ add_ligne_btns.forEach((add_ligne_btn) =>{
 })
 
 function function_search_add(){
-    value = search.value.toLowerCase();
+    value = document.querySelector('#search_add').value.toLowerCase();
     label = document.querySelectorAll(".add_ligne_btn");
     for (i = 0; i < label.length; i++) {
       content = label[i].textContent || label[i].innerText;
@@ -59,7 +59,7 @@ function function_search_add(){
         label[i].style.display = "none";
       }
     }
-}
+} 
 
 function refresh(){
     lignes = document.querySelectorAll('tr');
