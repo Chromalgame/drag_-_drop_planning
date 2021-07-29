@@ -81,14 +81,18 @@
         </div>
         <div class="planning scroll">
             <div class="planning_top">
-                <input onClick="getColor(this)" type="radio" id="black" name="color" value="black" checked>
-                <label for="black">black</label>
-                <input onClick="getColor(this)" type="radio" id="green" name="color" value="green">
-                <label for="green">green</label>
-                <input onClick="getColor(this)" type="radio" id="orange" name="color" value="orange">
-                <label for="orange">orange</label>
-                <input onClick="getColor(this)" type="radio" id="red" name="color" value="red">
-                <label for="red">red</label>
+                <input class="radio_color_radio" onClick="getColor(this)" type="radio" id="black" name="color" value="black" checked>
+                <label class="radio_color black" onClick="getColor_check(this)" for="black"><i class="fas fa-check-circle color_selected"></i> BASE</label>
+                
+                <input class="radio_color_radio" onClick="getColor(this)" type="radio" id="green" name="color" value="green">
+                <label class="radio_color green" onClick="getColor_check(this)" for="green">NON OBLIGATOIRE</label>
+            
+
+                <input class="radio_color_radio" onClick="getColor(this)" type="radio" id="orange" name="color" value="orange">
+                <label class="radio_color orange" onClick="getColor_check(this)" for="orange">A CONFIRMER</label>
+
+                <input class="radio_color_radio" onClick="getColor(this)" type="radio" id="red" name="color" value="red">
+                <label class="radio_color red" onClick="getColor_check(this)" for="red">OBLIGATOIRE</label>
             </div>
             <table class="tableau-style">
                 <thead>
