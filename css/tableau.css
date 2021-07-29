@@ -15,7 +15,7 @@ thead tr{
 
 th, td{
     padding: 15px 20px;
-    
+    position: relative;
     max-width:130px;
 }
 

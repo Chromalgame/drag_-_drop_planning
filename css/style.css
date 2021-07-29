@@ -145,6 +145,16 @@ ul{
     text-overflow: ellipsis;
 }
 
+.element_client{
+    position: absolute;
+    width: 80%;
+    font-size: 10px;
+    color: grey;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .planning_top{
     padding: 2% 3%;
     position: relative;
